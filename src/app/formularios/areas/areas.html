@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de figuras</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-6">
+
+                <form>
+
+                    <div class="form-group pt-4">
+                        <label for="num1">Dato 1:</label>
+                        <input [(ngModel)]="num1" name="num1" type="text" class="form-control"
+                        id="num1" placeholder="Ingresa el dato"/>
+                    </div>
+
+                    <div class="form-group pt-4">
+                        <label for="num2">Dato 2:</label>
+                        <input [(ngModel)]="num2" name="num2" type="text" class="form-control"
+                        id="num2" placeholder="Ingresa el segundo dato"/>
+                    </div>
+
+                    <br/>
+
+                    <label>Selecciona una figura:</label>
+
+                    <br/>
+
+                    <input type="radio" name="figura" value="triangulo" [(ngModel)]="figura">
+                    <label>Triángulo</label>
+
+                    <br/>
+
+                    <input type="radio" name="figura" value="circulo" [(ngModel)]="figura">
+                    <label>Círculo</label>
+
+                    <br/>
+
+                    <input type="radio" name="figura" value="rectangulo" [(ngModel)]="figura">
+                    <label>Rectángulo</label>
+
+                    <br/>
+
+                    <input type="radio" name="figura" value="pentagono" [(ngModel)]="figura">
+                    <label>Pentágono</label>
+
+                    <br/><br/>
+
+                    <button (click)="calcular()" type="button" class="btn btn-primary">
+                        Calcular
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="col-6">
+
+                <h2>Área: {{resultado}}</h2>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

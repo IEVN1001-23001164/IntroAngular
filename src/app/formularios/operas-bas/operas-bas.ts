@@ -29,7 +29,5 @@ export class OperasBas {
     if(this.operacion == 'division'){
       this.resultado=parseInt(this.num1)/parseInt(this.num2)
     }
-
   }
-
 }
