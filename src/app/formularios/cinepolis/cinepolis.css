@@ -1,0 +1,187 @@
+.cinepolis {
+    width: 100%;
+    min-height: 600px;
+    background-color: #17469e;
+    position: relative;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* TITULO SUPERIOR */
+
+.titulo {
+    background-color: white;
+    color: #222;
+    width: 130px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+
+/* ENTRADAS */
+
+.entradas {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 450px;
+    height: 220px;
+    border: 2px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.titulo-seccion {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+
+.campo label {
+    width: 210px;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+
+.campo input[type="text"],
+.campo input[type="number"] {
+    width: 155px;
+    height: 25px;
+    border: none;
+    background-color: white;
+}
+
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.radio input {
+    margin-left: 8px;
+}
+
+
+/* SALIDAS */
+
+.salidas {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 350px;
+    height: 130px;
+    border: 2px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.valor-pagar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.valor-pagar label {
+    margin-right: 15px;
+}
+
+
+.valor-pagar input {
+    width: 130px;
+    height: 25px;
+    border: none;
+    background-color: white;
+}
+
+
+/* LOGO */
+
+.logo {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+
+.estrella {
+    font-size: 100px;
+    color: #f5c400;
+    margin-right: 15px;
+}
+
+
+.cinepolis-texto {
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.slogan {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/* ACCIONES */
+
+.acciones {
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 110px;
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.acciones .titulo-seccion {
+    font-size: 22px;
+}
+
+
+.acciones button {
+    background-color: #eeeeee;
+    border: 1px solid #999;
+    padding: 8px 25px;
+    margin: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.acciones button:hover {
+    background-color: #cccccc;
+}

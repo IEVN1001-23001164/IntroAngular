@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Palíndromo</h3>
+    </div>
+
+    <div class="card-body">
+
+        <div class="form-group">
+            <label for="frase">Frase:</label>
+
+            <input
+                [(ngModel)]="frase"
+                name="frase"
+                type="text"
+                class="form-control"
+                id="frase"
+                placeholder="Ingresa una frase">
+        </div>
+
+        <br>
+
+        <button
+            (click)="calcular()"
+            type="button"
+            class="btn btn-primary">
+            Calcular
+        </button>
+
+        <br><br>
+
+        <p>Vocales: {{numeroVocales}}</p>
+
+        <p>Vocales encontradas: {{vocales}}</p>
+
+        <p>Consonantes: {{numeroConsonantes}}</p>
+
+        <p>Consonantes encontradas: {{consonantes}}</p>
+
+        <p>{{resultado}}</p>
+
+    </div>
+</div>

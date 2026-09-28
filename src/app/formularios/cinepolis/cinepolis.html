@@ -1,0 +1,120 @@
+<div class="cinepolis">
+
+    <div class="titulo">
+        Cinépolis
+    </div>
+
+    <div class="entradas">
+
+        <div class="titulo-seccion">
+            Entradas
+        </div>
+
+        <div class="campo">
+            <label>Nombre</label>
+
+            <input
+                [(ngModel)]="nombre"
+                type="text">
+        </div>
+
+        <div class="campo">
+            <label>Cantidad Compradores</label>
+
+            <input
+                [(ngModel)]="compradores"
+                type="text">
+        </div>
+
+        <div class="campo">
+            <label>Tarjeta Cineco</label>
+
+            <div class="radio">
+
+                <input
+                    [(ngModel)]="tarjeta"
+                    type="radio"
+                    name="tarjeta"
+                    value="si">
+
+                <span>Si</span>
+
+                <input
+                    [(ngModel)]="tarjeta"
+                    type="radio"
+                    name="tarjeta"
+                    value="no">
+
+                <span>No</span>
+
+            </div>
+        </div>
+
+        <div class="campo">
+            <label>Cantidad De Boletos</label>
+
+            <input
+                [(ngModel)]="boletos"
+                type="text">
+        </div>
+
+    </div>
+
+
+    <div class="salidas">
+
+        <div class="titulo-seccion">
+            Salidas
+        </div>
+
+        <div class="valor-pagar">
+
+            <label>Valor a Pagar</label>
+
+            <input
+                [value]="valor"
+                readonly>
+
+        </div>
+
+    </div>
+
+
+    <div class="logo">
+
+        <div class="estrella">
+            ★
+        </div>
+
+        <div>
+            <div class="cinepolis-texto">
+                Cinépolis
+            </div>
+
+            <div class="slogan">
+                LA CAPITAL DEL CINE
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="acciones">
+
+        <div class="titulo-seccion">
+            Acciones
+        </div>
+
+        <button
+            (click)="procesar()">
+            Procesar
+        </button>
+
+        <button
+            type="button">
+            Salir
+        </button>
+
+    </div>
+
+</div>
